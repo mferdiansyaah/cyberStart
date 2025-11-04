@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - CyberStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+                <a href="blog.html" class="text-secondary">Blog</a>
+                <a href="services.html" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="contact.html" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Konsultasi</a>
+            <button class="md:hidden p-2" onclick="toggleMenu()"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4 border-b" style="border-color: #1a1f29; background: linear-gradient(135deg, rgba(178, 60, 255, 0.1) 0%, rgba(0, 200, 200, 0.1) 100%);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">Blog & Insights</h1>
+            <p class="text-xl text-gray-400">Tips dan tren terkini dalam teknologi digital</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto space-y-8">
+            <article class="rounded border-2 overflow-hidden animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+                        <span>25 Nov 2024</span>
+                        <span>•</span>
+                        <span style="color: #00c8c8;">Tech Tips</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: #00c8c8;">Tren Web Development 2025</h3>
+                    <p class="text-gray-400 mb-4">Perkembangan teknologi web development terus berkembang. Tahun 2025 akan membawa beberapa tren baru yang akan mengubah cara kita membangun aplikasi web...</p>
+                    <a href="#" class="text-secondary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <article class="rounded border-2 overflow-hidden animate-glow-border hover:shadow-lg transition-all" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+                        <span>20 Nov 2024</span>
+                        <span>•</span>
+                        <span style="color: #b23cff;">Business</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: #b23cff;">Manfaat Transformasi Digital untuk UKM</h3>
+                    <p class="text-gray-400 mb-4">Transformasi digital bukan hanya untuk perusahaan besar. UKM juga dapat memperoleh manfaat signifikan dengan adopsi teknologi digital yang tepat...</p>
+                    <a href="#" class="text-secondary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <article class="rounded border-2 overflow-hidden animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+                        <span>15 Nov 2024</span>
+                        <span>•</span>
+                        <span style="color: #00c8c8;">Security</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: #00c8c8;">Keamanan Data di Era Cloud</h3>
+                    <p class="text-gray-400 mb-4">Cloud computing menawarkan fleksibilitas dan skalabilitas, tetapi keamanan data tetap menjadi prioritas utama. Pelajari best practices untuk melindungi data Anda...</p>
+                    <a href="#" class="text-secondary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </article>
+
+            <article class="rounded border-2 overflow-hidden animate-glow-border hover:shadow-lg transition-all" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="p-8">
+                    <div class="flex items-center gap-4 mb-4 text-sm text-gray-400">
+                        <span>10 Nov 2024</span>
+                        <span>•</span>
+                        <span style="color: #b23cff;">Mobile</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3" style="color: #b23cff;">Tips Mengembangkan Aplikasi Mobile Sukses</h3>
+                    <p class="text-gray-400 mb-4">Aplikasi mobile telah menjadi kebutuhan utama dalam strategi digital. Bagaimanakah cara mengembangkan aplikasi mobile yang sukses dan menguntungkan...</p>
+                    <a href="#" class="text-secondary font-bold">Baca Selengkapnya →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-secondary">Beranda</a>
+                <a href="blog.html" class="text-gray-400 hover:text-secondary">Blog</a>
+                <a href="contact.html" class="text-gray-400 hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

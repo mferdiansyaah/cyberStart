@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harga & Paket - CyberStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+                <a href="pricing.html" class="text-secondary">Harga</a>
+                <a href="services.html" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="contact.html" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Konsultasi</a>
+            <button class="md:hidden p-2" onclick="toggleMenu()"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4 border-b" style="border-color: #1a1f29; background: linear-gradient(135deg, rgba(178, 60, 255, 0.1) 0%, rgba(0, 200, 200, 0.1) 100%);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">Paket Harga</h1>
+            <p class="text-xl text-gray-400">Pilih paket yang sesuai dengan kebutuhan Anda</p>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Paket Starter -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #00c8c8;">Starter</h3>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold" style="color: #b23cff;">Rp 5</span>
+                    <span class="text-gray-400"> Juta</span>
+                </div>
+                <p class="text-gray-400 mb-6">Cocok untuk startup dan bisnis kecil</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="text-gray-400">✓ Website dasar (5 halaman)</li>
+                    <li class="text-gray-400">✓ Responsive design</li>
+                    <li class="text-gray-400">✓ Basic SEO</li>
+                    <li class="text-gray-400">✓ 1 bulan support</li>
+                </ul>
+                <a href="contact.html" class="block w-full text-center py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Pesan Sekarang</a>
+            </div>
+
+            <!-- Paket Professional -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all relative" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.08);">
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span class="px-4 py-1 rounded text-sm font-bold" style="background-color: #00c8c8; color: #1a1f29;">POPULER</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-4" style="color: #b23cff;">Professional</h3>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold" style="color: #00c8c8;">Rp 12</span>
+                    <span class="text-gray-400"> Juta</span>
+                </div>
+                <p class="text-gray-400 mb-6">Untuk bisnis menengah yang berkembang</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="text-gray-400">✓ Website lengkap (15 halaman)</li>
+                    <li class="text-gray-400">✓ Admin panel</li>
+                    <li class="text-gray-400">✓ Database integration</li>
+                    <li class="text-gray-400">✓ 6 bulan support</li>
+                    <li class="text-gray-400">✓ SEO optimization</li>
+                </ul>
+                <a href="contact.html" class="block w-full text-center py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Pesan Sekarang</a>
+            </div>
+
+            <!-- Paket Enterprise -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #00c8c8;">Enterprise</h3>
+                <div class="mb-6">
+                    <span class="text-4xl font-bold" style="color: #b23cff;">Custom</span>
+                </div>
+                <p class="text-gray-400 mb-6">Solusi kustom untuk enterprise</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="text-gray-400">✓ Sistem custom lengkap</li>
+                    <li class="text-gray-400">✓ Mobile app (iOS & Android)</li>
+                    <li class="text-gray-400">✓ Advanced security</li>
+                    <li class="text-gray-400">✓ 12 bulan support</li>
+                    <li class="text-gray-400">✓ Training & maintenance</li>
+                </ul>
+                <a href="contact.html" class="block w-full text-center py-2 border-2 font-bold rounded" style="border-color: #b23cff; color: #b23cff;">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 px-4 border-t" style="border-color: #1a1f29;">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center animate-neon-glow" style="color: #b23cff;">Layanan Tambahan</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-4 rounded border text-center" style="border-color: #1a1f29;">
+                    <p class="font-bold mb-2">Mobile App Development</p>
+                    <p class="text-secondary font-bold">Rp 15 Juta+</p>
+                </div>
+                <div class="p-4 rounded border text-center" style="border-color: #1a1f29;">
+                    <p class="font-bold mb-2">Maintenance (per bulan)</p>
+                    <p class="text-secondary font-bold">Rp 500K - 2M</p>
+                </div>
+                <div class="p-4 rounded border text-center" style="border-color: #1a1f29;">
+                    <p class="font-bold mb-2">API Development</p>
+                    <p class="text-secondary font-bold">Rp 3 Juta+</p>
+                </div>
+                <div class="p-4 rounded border text-center" style="border-color: #1a1f29;">
+                    <p class="font-bold mb-2">Hosting & Domain</p>
+                    <p class="text-secondary font-bold">Rp 100K - 500K</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-secondary">Beranda</a>
+                <a href="pricing.html" class="text-gray-400 hover:text-secondary">Harga</a>
+                <a href="contact.html" class="text-gray-400 hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

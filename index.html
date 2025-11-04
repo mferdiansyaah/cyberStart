@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberStart - Jasa Pengembangan Sistem & Aplikasi</title>
+    <meta name="description" content="CyberStart: Jasa pengembangan sistem dan aplikasi kustom untuk bisnis, sekolah, dan organisasi. Solusi digital cepat, efektif, dan terjangkau.">
+    <meta name="keywords" content="CyberStart, pengembangan sistem, aplikasi kustom, pengembangan website, aplikasi mobile, UI/UX, Medan, Indonesia">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="--bg: #0d1117; --primary: #b23cff; --secondary: #00c8c8; font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-foreground hover:text-secondary transition-colors">Beranda</a>
+                <a href="services.html" class="text-foreground hover:text-secondary transition-colors">Layanan</a>
+                <a href="portfolio.html" class="text-foreground hover:text-secondary transition-colors">Portfolio</a>
+                <a href="about.html" class="text-foreground hover:text-secondary transition-colors">Tentang</a>
+                <a href="team.html" class="text-foreground hover:text-secondary transition-colors">Tim</a>
+                <a href="pricing.html" class="text-foreground hover:text-secondary transition-colors">Harga</a>
+                <a href="contact.html" class="text-foreground hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8; background-color: transparent;">
+                Konsultasi
+            </a>
+            
+            <button class="md:hidden p-2" onclick="toggleMenu()" aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-opacity-95 border-b py-4" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+            <div class="flex flex-col items-center space-y-4 px-4">
+                <a href="index.html" class="text-foreground hover:text-secondary">Beranda</a>
+                <a href="services.html" class="text-foreground hover:text-secondary">Layanan</a>
+                <a href="portfolio.html" class="text-foreground hover:text-secondary">Portfolio</a>
+                <a href="about.html" class="text-foreground hover:text-secondary">Tentang</a>
+                <a href="team.html" class="text-foreground hover:text-secondary">Tim</a>
+                <a href="pricing.html" class="text-foreground hover:text-secondary">Harga</a>
+                <a href="contact.html" class="text-foreground hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 px-4" style="background-image: linear-gradient(rgba(178, 60, 255, 0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(178, 60, 255, 0.08) 1px, transparent 1px), linear-gradient(rgba(0, 200, 200, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 200, 200, 0.05) 1px, transparent 1px); background-size: 60px 60px, 60px 60px, 120px 120px, 120px 120px;">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">Kami Merancang, Anda Berkembang</h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto">Solusi digital inovatif untuk bisnis, sekolah, dan organisasi Anda</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="px-8 py-3 border-2 font-bold rounded text-center" style="border-color: #00c8c8; color: #00c8c8;">
+                    Konsultasi Gratis
+                </a>
+                <a href="services.html" class="px-8 py-3 border-2 font-bold rounded text-center" style="border-color: #b23cff; color: #b23cff;">
+                    Lihat Layanan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="py-16 px-4 border-t" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center animate-neon-glow" style="color: #b23cff;">Layanan Utama</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                    <h3 class="text-xl font-bold mb-3" style="color: #00c8c8;">Website Responsif</h3>
+                    <p class="text-gray-400">Desain modern dan fungsional untuk semua perangkat</p>
+                </div>
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                    <h3 class="text-xl font-bold mb-3" style="color: #b23cff;">Aplikasi Mobile</h3>
+                    <p class="text-gray-400">Aplikasi native dan cross-platform untuk iOS & Android</p>
+                </div>
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                    <h3 class="text-xl font-bold mb-3" style="color: #00c8c8;">Sistem Kustom</h3>
+                    <p class="text-gray-400">Solusi bisnis yang disesuaikan dengan kebutuhan Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-16 px-4 border-t" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <h3 class="text-4xl font-bold mb-2" style="color: #00c8c8;">150+</h3>
+                <p class="text-gray-400">Proyek Selesai</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold mb-2" style="color: #b23cff;">50+</h3>
+                <p class="text-gray-400">Klien Puas</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold mb-2" style="color: #00c8c8;">8+</h3>
+                <p class="text-gray-400">Tahun Pengalaman</p>
+            </div>
+            <div>
+                <h3 class="text-4xl font-bold mb-2" style="color: #b23cff;">24/7</h3>
+                <p class="text-gray-400">Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 border-t" style="border-color: #1a1f29;">
+        <div class="max-w-4xl mx-auto text-center p-8 rounded border-2 animate-glow-border" style="border-color: #00c8c8;">
+            <h2 class="text-3xl font-bold mb-4" style="color: #b23cff;">Siap Mengembangkan Bisnis Anda?</h2>
+            <p class="text-gray-400 mb-6">Hubungi kami hari ini untuk konsultasi gratis dan penawaran khusus</p>
+            <a href="contact.html" class="inline-block px-8 py-3 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">
+                Mulai Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4" style="color: #b23cff;">CyberStart</h3>
+                    <p class="text-gray-400">Solusi digital terpercaya untuk kesuksesan bisnis Anda</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4" style="color: #00c8c8;">Navigasi</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-secondary">Beranda</a></li>
+                        <li><a href="services.html" class="hover:text-secondary">Layanan</a></li>
+                        <li><a href="portfolio.html" class="hover:text-secondary">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4" style="color: #00c8c8;">Perusahaan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-secondary">Tentang Kami</a></li>
+                        <li><a href="team.html" class="hover:text-secondary">Tim Kami</a></li>
+                        <li><a href="blog.html" class="hover:text-secondary">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4" style="color: #00c8c8;">Kontak</h4>
+                    <p class="text-gray-400">Email: cyberstart@gmail.com</p>
+                    <p class="text-gray-400">Phone: +62 812-3456-7890</p>
+                    <p class="text-gray-400">Medan, Indonesia</p>
+                </div>
+            </div>
+            <div class="border-t text-center py-6 text-gray-400" style="border-color: #1a1f29;">
+                <p>&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

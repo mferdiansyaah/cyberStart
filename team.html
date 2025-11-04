@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Kami - CyberStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+                <a href="team.html" class="text-secondary">Tim</a>
+                <a href="services.html" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="contact.html" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Konsultasi</a>
+            <button class="md:hidden p-2" onclick="toggleMenu()"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4 border-b" style="border-color: #1a1f29; background: linear-gradient(135deg, rgba(178, 60, 255, 0.1) 0%, rgba(0, 200, 200, 0.1) 100%);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">Tim Kami</h1>
+            <p class="text-xl text-gray-400">Profesional berpengalaman siap mewujudkan ide Anda</p>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #b23cff, #00c8c8);"></div>
+                <h3 class="text-xl font-bold mb-2">Ahmad Riyanto</h3>
+                <p class="text-secondary font-bold mb-3">CEO & Founder</p>
+                <p class="text-gray-400 text-sm">Visioner dengan pengalaman 8+ tahun di industri teknologi</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #00c8c8, #b23cff);"></div>
+                <h3 class="text-xl font-bold mb-2">Siti Nurhaliza</h3>
+                <p class="text-secondary font-bold mb-3">CTO</p>
+                <p class="text-gray-400 text-sm">Expert dalam full-stack development dan cloud architecture</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #b23cff, #00c8c8);"></div>
+                <h3 class="text-xl font-bold mb-2">Budi Santoso</h3>
+                <p class="text-secondary font-bold mb-3">Lead Developer</p>
+                <p class="text-gray-400 text-sm">Spesialis backend dengan expertise dalam Node.js & Database</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #00c8c8, #b23cff);"></div>
+                <h3 class="text-xl font-bold mb-2">Rina Wijaya</h3>
+                <p class="text-secondary font-bold mb-3">UI/UX Designer</p>
+                <p class="text-gray-400 text-sm">Desainer berbakat dengan portfolio internasional</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #b23cff, #00c8c8);"></div>
+                <h3 class="text-xl font-bold mb-2">Hendri Gunawan</h3>
+                <p class="text-secondary font-bold mb-3">Mobile Developer</p>
+                <p class="text-gray-400 text-sm">Expert dalam React Native dan Flutter development</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #00c8c8, #b23cff);"></div>
+                <h3 class="text-xl font-bold mb-2">Dwi Pratama</h3>
+                <p class="text-secondary font-bold mb-3">QA Engineer</p>
+                <p class="text-gray-400 text-sm">Testing profesional untuk memastikan kualitas tertinggi</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #b23cff, #00c8c8);"></div>
+                <h3 class="text-xl font-bold mb-2">Mega Setyowati</h3>
+                <p class="text-secondary font-bold mb-3">Project Manager</p>
+                <p class="text-gray-400 text-sm">Mengelola proyek dengan profesional dan tepat waktu</p>
+            </div>
+
+            <div class="text-center p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <div class="w-24 h-24 rounded-full mx-auto mb-4" style="background: linear-gradient(135deg, #00c8c8, #b23cff);"></div>
+                <h3 class="text-xl font-bold mb-2">Reza Pratama</h3>
+                <p class="text-secondary font-bold mb-3">DevOps Engineer</p>
+                <p class="text-gray-400 text-sm">Infrastructure dan deployment automation specialist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-secondary">Beranda</a>
+                <a href="team.html" class="text-gray-400 hover:text-secondary">Tim</a>
+                <a href="contact.html" class="text-gray-400 hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

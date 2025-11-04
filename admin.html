@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Cyber Start</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="font-family: 'Quicksand', sans-serif;">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r p-6" style="border-color: #1a1f29; background-color: rgba(13, 17, 23, 0.5);">
+            <div class="text-2xl font-bold mb-8 animate-neon-glow" style="color: #b23cff;">Cyber Start</div>
+            <nav class="space-y-4">
+                <a href="#" class="block px-4 py-2 rounded font-bold" style="background-color: rgba(0, 200, 200, 0.1); color: #00c8c8;">Dashboard</a>
+                <a href="#" class="block px-4 py-2 rounded text-gray-400 hover:text-secondary">Projects</a>
+                <a href="#" class="block px-4 py-2 rounded text-gray-400 hover:text-secondary">Clients</a>
+                <a href="#" class="block px-4 py-2 rounded text-gray-400 hover:text-secondary">Team</a>
+                <a href="#" class="block px-4 py-2 rounded text-gray-400 hover:text-secondary">Reports</a>
+                <a href="#" class="block px-4 py-2 rounded text-gray-400 hover:text-secondary">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-auto">
+            <!-- Top Bar -->
+            <div class="border-b px-8 py-4 flex items-center justify-between" style="border-color: #1a1f29;">
+                <h1 class="text-3xl font-bold" style="color: #b23cff;">Dashboard</h1>
+                <div class="flex items-center space-x-4">
+                    <input type="text" placeholder="Search..." class="px-4 py-2 rounded border-2" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05); color: #fff;">
+                    <div class="w-10 h-10 rounded-full" style="background: linear-gradient(135deg, #b23cff, #00c8c8);"></div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="p-8 grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                    <p class="text-gray-400 mb-2">Total Projects</p>
+                    <h3 class="text-3xl font-bold" style="color: #00c8c8;">150</h3>
+                </div>
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                    <p class="text-gray-400 mb-2">Active Projects</p>
+                    <h3 class="text-3xl font-bold" style="color: #b23cff;">12</h3>
+                </div>
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                    <p class="text-gray-400 mb-2">Total Clients</p>
+                    <h3 class="text-3xl font-bold" style="color: #00c8c8;">50</h3>
+                </div>
+                <div class="p-6 rounded border-2 animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                    <p class="text-gray-400 mb-2">Revenue</p>
+                    <h3 class="text-3xl font-bold" style="color: #b23cff;">Rp 2.5M</h3>
+                </div>
+            </div>
+
+            <!-- Recent Projects -->
+            <div class="px-8 pb-8">
+                <h2 class="text-2xl font-bold mb-6" style="color: #b23cff;">Recent Projects</h2>
+                <div class="rounded border-2 overflow-hidden" style="border-color: #1a1f29;">
+                    <table class="w-full">
+                        <thead>
+                            <tr style="background-color: rgba(178, 60, 255, 0.1); border-color: #1a1f29;">
+                                <th class="px-6 py-4 text-left font-bold">Project</th>
+                                <th class="px-6 py-4 text-left font-bold">Client</th>
+                                <th class="px-6 py-4 text-left font-bold">Status</th>
+                                <th class="px-6 py-4 text-left font-bold">Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-color: #1a1f29;" class="border-b">
+                                <td class="px-6 py-4">E-Commerce Platform</td>
+                                <td class="px-6 py-4">PT. Digital Indonesia</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 rounded text-sm" style="background-color: rgba(0, 200, 200, 0.2); color: #00c8c8;">Active</span></td>
+                                <td class="px-6 py-4">75%</td>
+                            </tr>
+                            <tr style="border-color: #1a1f29;" class="border-b">
+                                <td class="px-6 py-4">Mobile App</td>
+                                <td class="px-6 py-4">Startup Tech</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 rounded text-sm" style="background-color: rgba(0, 200, 200, 0.2); color: #00c8c8;">Active</span></td>
+                                <td class="px-6 py-4">60%</td>
+                            </tr>
+                            <tr style="border-color: #1a1f29;" class="border-b">
+                                <td class="px-6 py-4">Dashboard Analytics</td>
+                                <td class="px-6 py-4">Enterprise Corp</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 rounded text-sm" style="background-color: rgba(178, 60, 255, 0.2); color: #b23cff;">Completed</span></td>
+                                <td class="px-6 py-4">100%</td>
+                            </tr>
+                            <tr style="border-color: #1a1f29;">
+                                <td class="px-6 py-4">Website Sekolah</td>
+                                <td class="px-6 py-4">SMA Negeri 1</td>
+                                <td class="px-6 py-4"><span class="px-3 py-1 rounded text-sm" style="background-color: rgba(0, 200, 200, 0.2); color: #00c8c8;">Active</span></td>
+                                <td class="px-6 py-4">85%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

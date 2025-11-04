@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - CyberStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="--bg: #0d1117; --primary: #b23cff; --secondary: #00c8c8; font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+                <a href="services.html" class="text-secondary">Layanan</a>
+                <a href="portfolio.html" class="hover:text-secondary transition-colors">Portfolio</a>
+                <a href="about.html" class="hover:text-secondary transition-colors">Tentang</a>
+                <a href="contact.html" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Konsultasi</a>
+            <button class="md:hidden p-2" onclick="toggleMenu()"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4 border-b" style="border-color: #1a1f29; background: linear-gradient(135deg, rgba(178, 60, 255, 0.1) 0%, rgba(0, 200, 200, 0.1) 100%);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">Layanan Kami</h1>
+            <p class="text-xl text-gray-400">Solusi komprehensif untuk semua kebutuhan digital Anda</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Service 1 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #00c8c8;">Web Development</h3>
+                <p class="text-gray-400 mb-4">Pengembangan website modern dengan teknologi terkini, responsive design, dan performa optimal.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ Design responsif mobile-first</li>
+                    <li>✓ SEO-friendly architecture</li>
+                    <li>✓ Performance optimization</li>
+                    <li>✓ Security best practices</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #b23cff;">Mobile Apps</h3>
+                <p class="text-gray-400 mb-4">Aplikasi mobile native untuk iOS & Android dengan user experience yang luar biasa.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ Native iOS & Android apps</li>
+                    <li>✓ Cross-platform solutions</li>
+                    <li>✓ Real-time functionality</li>
+                    <li>✓ Push notifications</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #00c8c8;">UI/UX Design</h3>
+                <p class="text-gray-400 mb-4">Desain user interface dan experience yang intuitif, menarik, dan meningkatkan konversi.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ Wireframing & prototyping</li>
+                    <li>✓ User research & testing</li>
+                    <li>✓ Design system creation</li>
+                    <li>✓ Accessibility compliance</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #b23cff;">Custom Systems</h3>
+                <p class="text-gray-400 mb-4">Sistem enterprise custom yang dirancang khusus untuk kebutuhan bisnis spesifik Anda.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ Business logic implementation</li>
+                    <li>✓ Database design & optimization</li>
+                    <li>✓ API development</li>
+                    <li>✓ Integration services</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #00c8c8;">E-Commerce</h3>
+                <p class="text-gray-400 mb-4">Platform e-commerce lengkap dengan payment gateway, inventory management, dan analytics.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ Store setup & customization</li>
+                    <li>✓ Payment integration</li>
+                    <li>✓ Inventory management</li>
+                    <li>✓ Marketing tools</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="p-8 rounded border-2 animate-glow-border hover:shadow-lg transition-all" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);">
+                <h3 class="text-2xl font-bold mb-4" style="color: #b23cff;">Maintenance & Support</h3>
+                <p class="text-gray-400 mb-4">Dukungan berkelanjutan dan maintenance untuk memastikan sistem Anda selalu optimal.</p>
+                <ul class="space-y-2 text-gray-400 mb-6">
+                    <li>✓ 24/7 technical support</li>
+                    <li>✓ Security updates</li>
+                    <li>✓ Performance monitoring</li>
+                    <li>✓ Bug fixes & improvements</li>
+                </ul>
+                <a href="contact.html" class="text-secondary font-bold">Mulai Proyek →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 px-4 border-t" style="border-color: #1a1f29;">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-center animate-neon-glow" style="color: #b23cff;">Proses Kerja Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg" style="background-color: rgba(178, 60, 255, 0.2); color: #b23cff;">1</div>
+                    <h4 class="font-bold mb-2">Konsultasi</h4>
+                    <p class="text-gray-400 text-sm">Diskusi kebutuhan & tujuan bisnis Anda</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg" style="background-color: rgba(0, 200, 200, 0.2); color: #00c8c8;">2</div>
+                    <h4 class="font-bold mb-2">Perencanaan</h4>
+                    <p class="text-gray-400 text-sm">Membuat strategi & timeline proyek</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg" style="background-color: rgba(178, 60, 255, 0.2); color: #b23cff;">3</div>
+                    <h4 class="font-bold mb-2">Desain</h4>
+                    <p class="text-gray-400 text-sm">Membuat mockup & prototype</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg" style="background-color: rgba(0, 200, 200, 0.2); color: #00c8c8;">4</div>
+                    <h4 class="font-bold mb-2">Development</h4>
+                    <p class="text-gray-400 text-sm">Coding & development fase</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg" style="background-color: rgba(178, 60, 255, 0.2); color: #b23cff;">5</div>
+                    <h4 class="font-bold mb-2">Launch</h4>
+                    <p class="text-gray-400 text-sm">Testing & deployment produksi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-secondary">Beranda</a>
+                <a href="services.html" class="text-gray-400 hover:text-secondary">Layanan</a>
+                <a href="contact.html" class="text-gray-400 hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

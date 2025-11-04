@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default to cyberpunk dark theme only */
+    --background: 220 20% 8%;
+    --foreground: 0 0% 96%;
+    --card: 220 18% 12%;
+    --card-foreground: 0 0% 96%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 280 70% 55%;
+    --primary-foreground: 220 20% 8%;
+    --secondary: 178 88% 48%;
+    --secondary-foreground: 220 20% 8%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 178 50% 65%;
+    --accent: 280 70% 55%;
+    --accent-foreground: 220 20% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 20% 8%;
+    --border: 220 20% 18%;
+    --input: 220 18% 16%;
+    --ring: 280 70% 55%;
+    --radius: 0.375rem;
+  }
+
+  /* Removed .cyberpunk and .dark classes - using only root variables */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Refined cyberpunk animations - more subtle and elegant */
+@keyframes glitch {
+  0%,
+  100% {
+    text-shadow: 2px 0 rgba(178, 60, 255, 0.6), -2px 0 rgba(0, 200, 200, 0.6);
+  }
+  25% {
+    text-shadow: -2px 0 rgba(178, 60, 255, 0.6), 2px 0 rgba(0, 200, 200, 0.6);
+  }
+  50% {
+    text-shadow: 2px 2px rgba(178, 60, 255, 0.5), -2px -2px rgba(0, 200, 200, 0.5);
+  }
+  75% {
+    text-shadow: -2px 2px rgba(178, 60, 255, 0.5), 2px -2px rgba(0, 200, 200, 0.5);
+  }
+}
+
+@keyframes neon-glow {
+  0%,
+  100% {
+    text-shadow: 0 0 15px rgba(178, 60, 255, 0.5), 0 0 25px rgba(0, 200, 200, 0.3);
+    filter: brightness(1);
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(178, 60, 255, 0.8), 0 0 35px rgba(0, 200, 200, 0.5);
+    filter: brightness(1.1);
+  }
+}
+
+@keyframes glow-border {
+  0%,
+  100% {
+    box-shadow: inset 0 0 15px rgba(178, 60, 255, 0.2), 0 0 20px rgba(0, 200, 200, 0.15);
+  }
+  50% {
+    box-shadow: inset 0 0 20px rgba(178, 60, 255, 0.3), 0 0 30px rgba(0, 200, 200, 0.25);
+  }
+}
+
+@keyframes grid-background {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-glitch {
+  animation: glitch 0.3s ease-in-out;
+}
+
+.animate-neon-glow {
+  animation: neon-glow 3s ease-in-out infinite;
+}
+
+.animate-glow-border {
+  animation: glow-border 3s ease-in-out infinite;
+}
+
+/* Elegant cyberpunk grid background */
+.cyberpunk-grid {
+  background-image: linear-gradient(rgba(178, 60, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(178, 60, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(0, 200, 200, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 200, 0.05) 1px, transparent 1px);
+  background-size: 60px 60px, 60px 60px, 120px 120px, 120px 120px;
+  background-position: 0 0, 0 0, 0 0, 0 0;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id" class="cyberpunk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Dokumentasi - CyberStart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-foreground" style="font-family: 'Quicksand', sans-serif;">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-opacity-95 backdrop-blur-sm z-50 border-b" style="background-color: rgba(13, 17, 23, 0.95); border-color: #00c8c8;">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold animate-neon-glow" style="color: #b23cff;">CyberStart</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="hover:text-secondary transition-colors">Beranda</a>
+                <a href="faq.html" class="text-secondary">FAQ</a>
+                <a href="services.html" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="contact.html" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <a href="contact.html" class="hidden md:block px-6 py-2 border-2 font-bold rounded" style="border-color: #00c8c8; color: #00c8c8;">Konsultasi</a>
+            <button class="md:hidden p-2" onclick="toggleMenu()"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-32 pb-16 px-4 border-b" style="border-color: #1a1f29; background: linear-gradient(135deg, rgba(178, 60, 255, 0.1) 0%, rgba(0, 200, 200, 0.1) 100%);">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 animate-neon-glow" style="color: #b23cff;">FAQ & Dokumentasi</h1>
+            <p class="text-xl text-gray-400">Jawaban untuk pertanyaan umum Anda</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #00c8c8;">
+                    Berapa lama proses pengembangan website?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Waktu pengembangan website tergantung dari kompleksitas proyek. Untuk website dasar biasanya 2-4 minggu, sedangkan untuk proyek lebih kompleks bisa 2-3 bulan.</p>
+            </div>
+
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #b23cff;">
+                    Apakah ada garansi untuk produk yang dihasilkan?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Ya, kami memberikan garansi sesuai dengan paket yang Anda pilih. Untuk paket Starter 1 bulan, Professional 6 bulan, dan Enterprise hingga 12 bulan.</p>
+            </div>
+
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #00c8c8;">
+                    Apakah bisa request revisi?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Tentu! Kami menyediakan revisi unlimited selama masih dalam fase development. Setelah go-live, revisi tambahan akan dikenakan biaya sesuai dengan porsi pekerjaan.</p>
+            </div>
+
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #b23cff;">
+                    Metode pembayaran apa saja yang tersedia?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Kami menerima berbagai metode pembayaran termasuk transfer bank, kartu kredit, dan e-wallet. Kami juga bisa menyediakan cicilan untuk proyek dengan nilai tertentu.</p>
+            </div>
+
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #b23cff; background-color: rgba(178, 60, 255, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #00c8c8;">
+                    Apakah termasuk training untuk tim kami?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Untuk paket Professional dan Enterprise, kami menyediakan training gratis untuk tim Anda. Training dapat berupa dokumentasi, video tutorial, atau session langsung.</p>
+            </div>
+
+            <div class="rounded border-2 p-6 cursor-pointer animate-glow-border" style="border-color: #00c8c8; background-color: rgba(0, 200, 200, 0.05);" onclick="toggleFAQ(this)">
+                <h3 class="text-xl font-bold flex items-center justify-between" style="color: #b23cff;">
+                    Bagaimana dengan maintenance setelah go-live?
+                    <span class="text-2xl">+</span>
+                </h3>
+                <p class="text-gray-400 hidden mt-4">Kami menyediakan paket maintenance bulanan mulai dari Rp 500K hingga Rp 2M tergantung kebutuhan. Termasuk bug fixes, updates, dan support teknis 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-12 px-4" style="border-color: #1a1f29;">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400 mb-4">&copy; 2025 CyberStart. Semua hak dilindungi undang-undang.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-secondary">Beranda</a>
+                <a href="faq.html" class="text-gray-400 hover:text-secondary">FAQ</a>
+                <a href="contact.html" class="text-gray-400 hover:text-secondary">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
